@@ -1,0 +1,29 @@
+/*
+ * EX_INTERRUPT_Config.h
+*  SWC: External inttrupt
+ *  Created on: Aug 23, 2023
+ *  Author: Ayat Mohamed
+ */
+
+#ifndef EX_INTERRUPT_CONFIG_H_
+#define EX_INTERRUPT_CONFIG_H_
+
+// GICR BITS ENABLE INTERRUPT INT1->BIT7 , INT1->BIT6 ,INT2->BIT5
+#define GICR_INT1    7
+#define GICR_INT0    6
+#define GICR_INT2    5
+
+// MCUCR BITS INTERRUPT PIN INT1 OR INT2
+// INT0 -->BIT3,2 (ISC11 , ISC10)
+#define MCUCR_ISC11  3
+#define MCUCR_ISC10  2
+
+// INT0 -->BIT3,2 (ISC01 , ISC00)
+#define MCUCR_ISC01  1
+#define MCUCR_ISC00  0
+
+// MCUCSR BITS INTERRUPT PIN INT2 BIT6-->ISC2
+#define MCUCSR_INT2  6
+
+
+#endif /* EX_INTERRUPT_CONFIG_H_ */
